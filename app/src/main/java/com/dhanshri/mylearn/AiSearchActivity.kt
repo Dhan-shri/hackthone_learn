@@ -34,7 +34,7 @@ class AiSearchActivity : AppCompatActivity() {
     }
 
     fun getResponseQuestion(question: String, callback: (String) -> Unit) {
-        val apiKey = "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"
+        val apiKey = " " // "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"
         val url = "https://api.openai.com/v1/completions"
 
         val requestBody = """

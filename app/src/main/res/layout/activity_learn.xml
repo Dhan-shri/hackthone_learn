@@ -8,10 +8,18 @@
         android:layout_height="match_parent"
         tools:context=".LearnActivity">
 
-
+        <Button
+            android:id="@+id/btnAddLearning"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:text="Add Learning"
+            app:layout_constraintBottom_toTopOf="@id/btnExplore"
+            app:layout_constraintBottom_toBottomOf="parent"/>
         <Button
             android:id="@+id/btnExplore"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_margin="10dp"

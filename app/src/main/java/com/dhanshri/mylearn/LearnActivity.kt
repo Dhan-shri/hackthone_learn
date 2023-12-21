@@ -45,7 +45,7 @@ class LearnActivity : AppCompatActivity() {
         val btnSave = dialogView.findViewById<View>(R.id.btn_save)
         val courseName = dialogView.findViewById<EditText>(R.id.et_course_name)
         val startDate = dialogView.findViewById<DatePicker>(R.id.et_start_date)
-        val endDate = dialogView.findViewById<DatePicker>(R.id.et_end_date)
+        val endDate = dialogView.findViewById<TimePicker>(R.id.et_end_date)
         val dailyTime = dialogView.findViewById<TimePicker>(R.id.daily_time)
         btnSave.setOnClickListener {
             Toast.makeText(this, "$courseName", Toast.LENGTH_SHORT).show()

@@ -30,8 +30,6 @@ class ChatGptActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= DataBindingUtil.setContentView(this, R.layout.activity_chat_gpt)
 
-
-
         webView = binding.webView
         swipeLayout = binding.swipeRefreshLayout
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {

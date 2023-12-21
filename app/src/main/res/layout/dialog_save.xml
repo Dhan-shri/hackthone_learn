@@ -17,45 +17,70 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
+        <LinearLayout
+            android:id="@+id/ll_date_time"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_course_name"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
         <DatePicker
             android:id="@+id/et_start_date"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:hint="Start Data"
             app:layout_constraintTop_toBottomOf="@+id/et_course_name"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_gravity="center"
+            android:scaleY="0.7"
+            android:scaleX="0.7"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"/>
 
 
-        <DatePicker
+        <TimePicker
             android:id="@+id/et_end_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Start Data"
             app:layout_constraintTop_toBottomOf="@+id/et_start_date"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_gravity="center"
+            android:scaleY="0.7"
+            android:scaleX="0.7"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"/>
 
 
         <TimePicker
             android:id="@+id/daily_time"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:hint="@string/start_data"
+            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@+id/et_end_date"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
-
+        </LinearLayout>
         <Button
             android:id="@+id/btn_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Save Info"
+            android:text="Save Info and Shedule Notification"
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/daily_time"/>
+            app:layout_constraintTop_toBottomOf="@id/ll_date_time"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
